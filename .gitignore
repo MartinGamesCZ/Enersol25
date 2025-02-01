@@ -1,0 +1,13 @@
+# Build directory
+build/
+
+.env
+
+# Node modules
+node_modules/
+
+bun.lockb
+package-lock.json
+yarn.lock
+
+dist/

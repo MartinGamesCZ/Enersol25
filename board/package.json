@@ -1,0 +1,19 @@
+{
+  "name": "enersol25",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "flash": "embets flash",
+    "console": "embets console",
+    "dev": "./node_modules/embets/dist/cli/index.js watch"
+  },
+  "devDependencies": {
+    "@types/node": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "embets": "^0.4.1"
+  }
+}
