@@ -42,11 +42,14 @@ export default function Page() {
   return (
     <div className="w-screen h-screen p-64">
       <h1 className="text-4xl font-bold">Gravitační baterie</h1>
-      <div>
-        <p>Nabito na {charge}%</p>
-        <Button onClick={toggleCharging}>
-          {!charging ? "Zapnout" : "Vypnout"} nabíjení
-        </Button>
+      <div className="mt-4">
+        <p>Battery: {charge}%</p>
+        <p>Buffer: {0}%</p>
+        <p>Buffer I: {0} mA</p>
+        <p>Buffer V: {0} V</p>
+        <p>Generator V: {0} V</p>
+        <p>Generator: Off</p>
+        <p>Stepper: Off</p>
       </div>
     </div>
   );
