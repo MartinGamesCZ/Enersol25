@@ -27,18 +27,6 @@ export default function Page() {
     return () => clearInterval(i);
   }, []);
 
-  const toggleCharging = useCallback(async () => {
-    await axios.get(`${SRVIP}/set/charging?charging=${charging ? "0" : "1"}`, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    const data = await getData();
-
-    setCharging(data.charging);
-  }, [charging]);
-
   return (
     <div className="w-screen h-screen p-64">
       <h1 className="text-4xl font-bold">Gravitační baterie</h1>
@@ -49,7 +37,7 @@ export default function Page() {
         <p>Buffer V: {0} V</p>
         <p>Generator V: {0} V</p>
         <p>Generator: Off</p>
-        <p>Stepper: Off</p>
+        <p>Charging: {charging ? "On" : "Off"}</p>
       </div>
     </div>
   );
