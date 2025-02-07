@@ -5,8 +5,8 @@
 
 #define SERIAL_SPEED 115200
 #define SERIAL_PORT Serial
-#define CHRG_ENABLE 22
-#define CHRG_DETECT 34
+#define CHRG_ENABLE 18
+#define CHRG_DETECT 5
 #define GEN_CURRENT 35
 #define GEN_VOLTAGE 36
 #define USS_TRIGGER 32
